@@ -47,6 +47,10 @@
             -webkit-transform: scale(1.03,1.03);
             transform: scale(1.03,1.03);
         }
+
+        img {
+            box-shadow: 10px 10px 10px #888888;
+        }
     </style>
 </head>
 
@@ -76,7 +80,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <div>
-                    <a class="navbar-brand" href="#top">
+                    <a class="navbar-brand navtop" id="navtop" href="#top">
 
                         <h4 class="blue">Connor</h4>
                         <h4 class="inline">Singerline</h4>
@@ -85,6 +89,8 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -92,12 +98,25 @@
             </div>
         </div>
     </nav>
+    <section class="container-fluid text-center bg-1 " id="skills">
+        <div class="row">
+            <div class="col-lg-12 about">
+                <h1 class="inline whitetxt"><u>Skills</u></h1>
+                <br><br />
+                <!--<div class="inline">
+                    <h1 class="blue">Skills</h1>
+                </div>-->
+                <div class="col-xs-6 col-sm-4 whitetxt"><p>C# / .NET<br /> ASP.NET <br />MVC <br />ADO.NET<br />Dapper<br />Transact-SQL</p></div>
+                <div class="col-xs-6 col-sm-4 whitetxt"><p>Javascript <br /> jQuery <br />HTML 5 <br />CSS 3<br />Bootstrap<br />NUnit</p></div>
+                <div class="col-xs-6 col-sm-4 whitetxt"><p>OOP <br /> Denodo <br />Tableau <br />FileBound<br />Microsoft Dynamics CRM<br />JIRA / Crucible<br />And more...</p></div>
+            </div>
+        </div>
+    </section>
     <section class="container-fluid text-center bg-3 " id="projects">
-        <h1 style="margin-bottom:45px;"><b style="text-decoration: underline">Projects</b></h1>
+        <h1 class="blue" style="margin-bottom:45px;"><b style="text-decoration: underline"><a href="#projects">Projects</a></b></h1>
         <div class="row ">
             <div class="col-md-6 col-md-push-6 no-left">
-                <img src="img/clevelandsports.jpg" class="img-responsive project fancybox" /></a>
-
+                <a href="http://codepen.io/csingerline/pen/mrZgxo" target="_blank"> <img src="img/clevelandsports.jpg" class="img-responsive project" /></a>
             </div>
             <div class="col-md-6  col-md-pull-6 no-right">
                 <div class="projUnder">
@@ -112,14 +131,15 @@
                     Basic single page website showing the ability to work with HTML, Bootstrap and CSS for custom built websites.
                 </p>
                 <a href="http://codepen.io/csingerline/pen/mrZgxo" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
+                <a href="http://codepen.io/csingerline/pen/mrZgxo" target="_blank">Click Here to View the Project and Source Code on Code Pen</a>
             </div>
         </div>
-        <br /><br /><br /><br />
+        <br /><br />
         <div class="divide "></div>
-        <br /><br /><br /><br />
+        <br /><br />
         <div class="row ">
             <div class="col-md-6 no-right">
-                <img src="img/jquerysample.jpg" class="img-responsive project fancybox" /></a>
+                <a href="http://codepen.io/csingerline/pen/wJzjxY" target="_blank"><img src="img/jquerysample.jpg" class="img-responsive project" /></a>
 
             </div>
             <div class="col-md-6 no-left">
@@ -137,11 +157,12 @@
                     selecting the different tabs available in the navigation bar and seeing the HTML code generated.
                 </p>
                 <a href="http://codepen.io/csingerline/pen/wJzjxY" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
+                <a href="http://codepen.io/csingerline/pen/wJzjxY" target="_blank">Click Here to View the Project and Source Code on Code Pen</a>
             </div>
         </div>
-        <br /><br /><br /><br />
+        <br /><br />
         <div class="divide "></div>
-        <br /><br /><br /><br />
+        <br /><br />
         <div class="row ">
             <div class="col-md-6 col-md-push-6 no-left">
                 <img src="img/Singerline_Hotel_Management_Network_Diagram.png" class="img-responsive project fancybox" /></a>
@@ -159,59 +180,11 @@
                     This is a Network Diagram created with SQL Server 2016 Management Studio as practice to create a full database
                     from a SQL script. The SQL script to create the database is also available for download if requested.
                 </p>
-             </div>
+            </div>
         </div>
-        <br /><br /><br /><br />
+        <br /><br />
         <div class="divide "></div>
-        <br /><br /><br /><br />
-               <!-- <ul class="skills">
-                        <li>HTML </li>
-                        <li>CSS </li>
-                        <li>JS </li>
-                        <li>JQuery </li>
-                    </ul>
-                </div>
-                <p class="description">
-                    I used the IP-API and Open Weather Map API to create a weather app that shows current temperature with dynamically
-                    changing icons based on current conditions. If the location detected is innacurate, the user can change
-                    their location.
-                </p>
-                <a href="/weather-app" target="_blank"> <i class="fa fa-external-link fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project"></i></a>
-                <a href="http://codepen.io/BobbyMcWho/pen/pyQOWj" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
-            </div>
-        <div class="row ">
-            <div class="col-md-6 no-right">
-                <a href="/weather-app" target="_blank"><img src="img/weather-app-large.png" class="img-responsive project" /></a>
-
-            </div>
-            <div class="col-md-6  no-left">
-                <div class="projUnder">
-                    <h3 class="blue">Local Weather App</h3>
-            </div>
-        <div class="divide "></div>
-        <div class="row ">
-            <div class="col-md-6 col-md-push-6 no-left">
-                <a href="/random-quote-generator" target="_blank"><img src="img/random-quote-generator-large.png" class="img-responsive project" /></a>
-
-            </div>
-            <div class="col-md-6 col-md-pull-6 no-right">
-                <div class="projUnder">
-                    <h3 class="blue">Random Quote Generator</h3>
-                    <ul class="skills">
-                        <li>HTML </li>
-                        <li>CSS </li>
-                        <li>JS </li>
-                        <li>JQuery </li>
-                    </ul>
-                </div>
-                <p class="description">
-                    I used the Quotes on Design API to pull quotes from their database, and display them to the user, changing
-                    the background color each time a new quote is loaded. Users can also click a link to tweet the quote.
-                </p>
-                <a href="/random-quote-generator" target="_blank"><i class="fa fa-external-link fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project"></i></a>
-                <a href="http://codepen.io/BobbyMcWho/pen/MyBLMg" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
-            </div>
-        </div>-->
+        <br /><br />
     </section>
     <div class="divide"></div>
     <div class="divide2 visible-md visible-lg"></div>
@@ -254,7 +227,6 @@
                 <a href="https://www.linkedin.com/in/connorsingerline" target="_blank" class="link-i linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
                 <a href="https://github.com/csingerline" target="_blank" class="link-i github"><i class="fa fa-github fa-3x"></i></a>
                 <a href="http://codepen.io/csingerline" target="_blank" class="link-i codepen"><i class="fa fa-codepen fa-3x"></i></a>
-                </span>
             </div>
         </div>
     </section>
@@ -266,9 +238,9 @@
         <div class="container-fluid">
             <div class="" id="botNavbar">
                 <ul class="nav navbar-nav navbar-center">
+                    <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -277,28 +249,32 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
     <script type="text/javascript">
-    $(function($){
-        var addToAll = false;
-        var gallery = true;
-        var titlePosition = 'inside';
-        $(addToAll ? 'img' : 'img.fancybox').each(function(){
-            var $this = $(this);
-            var title = $this.attr('title');
-            var src = $this.attr('data-big') || $this.attr('src');
-            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-            $this.wrap(a);
+        $(function ($) {
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function () {
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
         });
-        if (gallery)
-            $('a.fancybox').attr('rel', 'fancyboxgallery');
-        $('a.fancybox').fancybox({
-            titlePosition: titlePosition
-        });
-    });
-    $.noConflict();
+        $.noConflict();
+
+
+
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 
